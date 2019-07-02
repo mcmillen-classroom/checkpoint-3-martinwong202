@@ -7,10 +7,13 @@ public class QuizOOPMain
     // this is where the app starts
     public static void main(String[] args)
     {
-        Question[] questions = new Question[3];
+        String[] Questions3 = { "A.Fire", "B.Water", "C.Grass", "D.Electric"};
+
+        Question[] questions = new Question[4];
         questions[0] = new TrueFalseQuestion("Laney is better than BCC?", true);
         questions[1] = new TrueFalseQuestion("Java is an easy to understand language?", false);
         questions[2] = new FillTheBlankQuestion("Which season will the F building be open?", "fall", "Fall 2019", "Maybe never");
+        questions[3] = new MultipleChoiceQuestion("Charizard is a ___ type pokemon?",Questions3,0);
         // TODO
         int index = 0;
         int score = 0;

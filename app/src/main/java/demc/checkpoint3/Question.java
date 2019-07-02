@@ -27,6 +27,11 @@ public class Question
         return false;
     }
 
+    public boolean checkAnswer(int answer)
+    {
+        return false;
+    }
+
     public int getAnswerType()
     {
         return mAnswerType;
